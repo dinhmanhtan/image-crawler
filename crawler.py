@@ -91,8 +91,9 @@ if __name__ == "__main__":
  
     if not ( (args.s == None and args.h == None and args.m == None) ^ (args.e == None) ) :
         main(num_image)
-        print("Schedule for crawling by:")
+        print("\nSchedule for crawling by:")
         print("usage: crawler.py [-h] [--s S] [--m M] [--h H] [--e HH:MM:SS]")
+        RUN = False
 
     elif args.e == None:
         main(num_image)
